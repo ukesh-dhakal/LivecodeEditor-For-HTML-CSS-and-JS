@@ -5,9 +5,9 @@ const result = document.querySelector('#output');
 
 function run() {
 
-  localStorage.setItem('html_code', html_code.value);
-  localStorage.setItem('css_code', css_code.value);
-  localStorage.setItem('js_code', js_code.value);
+  localStorage.setItem('html_code', html_code.val);
+  localStorage.setItem('css_code', css_code.val);
+  localStorage.setItem('js_code', js_code.val);
 
 
   result.contentDocument.body.innerHTML = `<style>${localStorage.css_code}</style>` + localStorage.html_code;
@@ -20,6 +20,6 @@ css_code.onkeyup = () => run();
 js_code.onkeyup = () => run();
 
 
-html_code.value = localStorage.html_code;
-css_code.value = localStorage.css_code;
+html_code.val = localStorage.html_code;
+css_code.val = localStorage.css_code;
 js_code.value = localStorage.js_code;
