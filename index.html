@@ -7,37 +7,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Live Code Editor</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <section class=" min-[1280px]:h-screen  flex justify-center items-center flex-col font-mono bg-[#20BF55] overflow-hidden min-[1280px]:flex-col  ">
- <p class="text-white">@ukesh-dhakal</p>
- <section class="flex justify-center items-center m-2 sm:flex-col max-[900px]:flex-col min-[1280px]:flex-row   ">
+<body class="pattern-bg">
+    <section class="min-[1280px]:h-screen  flex justify-center items-center flex-col font-mono overflow-hidden min-[1280px]:flex-col">
+        <p class="text-white">@ukesh-dhakal</p>
+        <section class="flex justify-center items-center m-2 sm:flex-col max-[900px]:flex-col min-[1280px]:flex-row   ">
 
-   <label class="flex flex-col m-3 items-center" > <img class="h-8 w-8" src="https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon-by-vexels.png" alt="html">
-    <textarea class=" min-[1280px]:h-[30vh] min-[1280px]:w-[30vw] h-[30vh] w-[70vw] bg-[#1D1E22] text-[#bfff00] rounded-md caret-pink-500" spellcheck="false" placeholder="HTML"  id="html" ></textarea>
-   </label> 
-    
-   <label class="flex flex-col m-3 items-center" > <img class="h-8 w-6" src="https://th.bing.com/th/id/R.a57aeaeb1cbf1b1b9adea4df1992d7ab?rik=GLd8n3txdXGdjA&pid=ImgRaw&r=0" alt="css">
-    <textarea class=" min-[1280px]:h-[30vh] min-[1280px]:w-[30vw]  h-[30vh] w-[70vw] bg-[#1D1E22] text-[#bfff00] rounded-md caret-pink-500" spellcheck="false" placeholder="CSS"   id="css" ></textarea>
-   </label>
+            <label class="flex flex-col m-3 items-center"> <img class="h-8 w-8" src="https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon-by-vexels.png"
+                    alt="html">
+                <textarea class="min-[1280px]:h-[30vh] min-[1280px]:w-[30vw] h-[30vh] w-[70vw] bg-[#1D1E22] text-[#D1D5DB] rounded-md caret-pink-500
+                        placeholder-[#8B5CF6] placeholder-opacity-50 focus:placeholder-opacity-75
+                        focus:outline-none focus:ring focus:border-[#8B5CF6] border border-[#8B5CF6]"
+                    spellcheck="false" placeholder="HTML" id="html"></textarea>
+            </label>
 
-   <label class="flex flex-col m-3 items-center" ><img class="h-8 w-8" src="https://avatars1.githubusercontent.com/u/13569958?s=280&v=4" alt="js">
-    <textarea class=" min-[1200px]:h-[30vh] min-[1200px]:w-[30vw]   h-[30vh] w-[70vw] bg-[#1D1E22] text-[#bfff00] rounded-md caret-pink-500" spellcheck="false" placeholder="JS" id="js" ></textarea>
-   </label>
-    
-  </section>
+            <label class="flex flex-col m-3 items-center"> <img class="h-8 w-6"
+                    src="https://th.bing.com/th/id/R.a57aeaeb1cbf1b1b9adea4df1992d7ab?rik=GLd8n3txdXGdjA&pid=ImgRaw&r=0"
+                    alt="css">
+                <textarea class="min-[1280px]:h-[30vh] min-[1280px]:w-[30vw]  h-[30vh] w-[70vw] bg-[#1D1E22] text-[#D1D5DB] rounded-md caret-pink-500
+                        placeholder-[#8B5CF6] placeholder-opacity-50 focus:placeholder-opacity-75
+                        focus:outline-none focus:ring focus:border-[#8B5CF6] border border-[#8B5CF6]"
+                    spellcheck="false" placeholder="CSS" id="css"></textarea>
+            </label>
+
+            <label class="flex flex-col m-3 items-center"><img class="h-8 w-8"
+                    src="https://avatars1.githubusercontent.com/u/13569958?s=280&v=4" alt="js">
+                <textarea class="min-[1200px]:h-[30vh] min-[1200px]:w-[30vw]   h-[30vh] w-[70vw] bg-[#1D1E22] text-[#D1D5DB] rounded-md caret-pink-500
+                        placeholder-[#8B5CF6] placeholder-opacity-50 focus:placeholder-opacity-75
+                        focus:outline-none focus:ring focus:border-[#8B5CF6] border border-[#8B5CF6]"
+                    spellcheck="false" placeholder="JS" id="js"></textarea>
+            </label>
+
+        </section>
 
 
-  <label class="flex justify-center items-center flex-col min-[1280px]:h-[50vh] min-[1280px]:w-[50vw] max-[900px]:m-2" > 
-    <p class="text-white text-center">
-      *After reloading * press space to see result'
-    </p>
-    <iframe  id="output" class="bg-white font-black h-[40vh] w-[80vw] min-[1280px]:h-[50vh] min-[1280px]:w-[50vw]  " ></iframe>
-   </label>
-</section>
+        <label class="flex justify-center items-center flex-col min-[1280px]:h-[50vh] min-[1280px]:w-[50vw] max-[900px]:m-2">
+            <p class="text-white text-center">
+                *After reloading * press space to see result'
+            </p>
+            <iframe id="output"
+                class="bg-white font-black h-[40vh] w-[80vw] min-[1280px]:h-[50vh] min-[1280px]:w-[50vw]  "></iframe>
+        </label>
+    </section>
 
     <script src="main.js"></script>
 </body>

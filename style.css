@@ -1,0 +1,35 @@
+
+.pattern-bg {
+    background: linear-gradient(45deg, #8B5CF6, #25B3E3); /* Adjust the gradient colors */
+}
+
+
+
+textarea {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+
+textarea {
+    background-color: #1D1E22;
+    color: #D1D5DB;
+    border: 1px solid #8B5CF6;
+}
+
+textarea::placeholder {
+    color: #8B5CF6;
+}
+
+
+textarea:focus {
+    border-color: #8B5CF6;
+    outline: none;
+    transform: scale(1.02); 
+}
+
+
+#output {
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.3); 
+    transition: box-shadow 0.3s; 
+}
+
